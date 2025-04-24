@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include p5.js core library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <!-- Include p5.js DOM library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.dom.js"></script>
+    <title>MARFA</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="marfa">MARFA</div>
+
+        <!-- 🆕 Wrapped JOURNAL in a container for vertical flip effect -->
+        <div class="journal-container">
+            <div class="journal">JOURNAL</div>
+        </div>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <!-- SCROLL BAR -->
+    <input type="range" id="scrollBar" min="0" max="100" value="0">
+
+    <!-- BUTTONS TO TEST DISTORTION -->
+    <button class="distort-button" data-value="20">Slight Distortion</button>
+    <button class="distort-button" data-value="50">Medium Distortion</button>
+    <button class="distort-button" data-value="100">Max Distortion</button>
+    <div class="art-info"></div>
+
+    <script src="svg2p5.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Generic";
+    src: url('fonts/Generic.ttf') format('truetype');
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.marfa {
+    font-size: 300px;
+    letter-spacing: -10px;
+    font-family: "Generic", sans-serif;
+    color: #ffffff;
+}
+
+.journal {
+    font-size: 300px;
+    letter-spacing: -10px;
+    margin-top: -40px;
+    font-family: "Generic", sans-serif;
+    color: #ffffff;
+    line-height: 1;
+    position: relative;
+}
+
+.journal.upside-down {
+    transform: rotate(180deg);
+    transform-origin: center center;
+    line-height: 190px;
+}
+
+/* .journal-container {
+    display: inline-block;
+    /* transform-origin: top bottom ; */
+}
+
+/*.journal-container.flipped-vertically .journal {
+    transform: scaleY(-100);
+    top: 100px; 
+} */
+
+#scrollBar {
+    width: 80%;  /* Adjust width of the scrollbar */
+    max-width: 600px;
+    height: 20px;  /* Height of the scrollbar track */
+    margin-bottom: 30px;
+    appearance: none;
+    background: #ddd;  /* Light gray background for the track */
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Style the scrollbar itself */
+#scrollBar::-webkit-scrollbar {
+    height: 20px; /* height for horizontal scrollbars */
+}
+
+#scrollBar::-webkit-scrollbar-thumb {
+    background: #ff0000; /* Red color for the thumb */
+    border-radius: 10px;
+}
+
+#scrollBar::-webkit-scrollbar-thumb:hover {
+    background: #b30000; /* Darker red when hovered */
+}
+
+/* Style the buttons */
+.distort-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #555;
+    border: 2px solid #777;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.distort-button:hover {
+    background-color: #444;
+}
+
+.distort-button:active {
+    background-color: #222;
+}
+
+.art-info {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: sans-serif;
+    background: rgba(0,0,0,0.6);
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 300px;
+    font-size: 14px;
+    z-index: 10;
+}
